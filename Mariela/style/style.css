@@ -132,6 +132,25 @@ header{
     #face{
         height: 850px;
     }
+    .overflov1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .element-holder{
+        width: 90%;
+        max-width: 1000px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 70%;
+    }
+    .self-box{
+       margin-top: -100px;
+       margin-left: 0;
+       margin-right: 0;
+    
+    }
+
 
 }
 @media(max-width:1700px){
@@ -212,6 +231,46 @@ article {
 .card:hover{
     box-shadow: 0 8px 8px 10px rgba(43, 44, 44, 0.534);
     transform: scale(1.1);
+}
+/*second overflow*/
+.overflov1{
+    margin-top: 75px;
+    background-color: #CEB3CB;
+    color: white;
+    font-family: Roboto;
+}
+.element-holder{
+    width: 90%;
+    padding: 75px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.self-box{
+    width: 440px;
+    height: 450px;
+    background-color: #B08EAD;
+    order: 1;
+    margin-right: -100px;
+    z-index: 1;
+    padding: 0 4% 0 4%;
+}
+.image-holder{
+    order: 2;
+}
+.image-holder, img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.about_me{
+    font-size: 14px;
+    padding-top: 124px;
+}
+.main_context{
+    font-size: 45px;
+    margin-bottom: 22px;
 }
 
 
