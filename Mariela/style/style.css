@@ -132,9 +132,6 @@ header{
     #face{
         height: 850px;
     }
-    .card:hover{
-        display: none;
-    }
 
 }
 @media(max-width:1700px){
@@ -190,7 +187,7 @@ article {
     color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 5px 5px 5px rgba(41, 40, 40, 0.712);
+    box-shadow: 0 8px 8px 5px rgba(61, 60, 60, 0.247);
     text-decoration: none;
     transition: .3s;
 }
