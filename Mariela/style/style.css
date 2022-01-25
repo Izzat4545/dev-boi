@@ -132,9 +132,20 @@ header{
     #face{
         height: 850px;
     }
+    .container img{
+        width: 260px;
+        height: 200px;
+      
+    }
+    .card{
+        box-shadow: 0 8px 8px 12px rgba(43, 44, 44, 0.534);
+    }
+    .card:hover{
+        display: none;
+    }
 }
 @media(max-width:1700px){
-    
+    /*Just incase*/
 }
 
 
