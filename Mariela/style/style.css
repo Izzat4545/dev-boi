@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cormorant Garamond;
+}
+:root{
+    --link_clor:#B08EAD;
+
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 120px;
+}
+.nav-bar a{
+    padding-right: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--link_clor);
+    position: relative;
+    padding: 0 10px;
+   
+}
+.nav-bar a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--link_clor );
+    transition: 0.3s;
+}
+.nav-bar a:hover::after{
+   width: 100%;
+}
+#face{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(#C9ADC6, #D6BBD3);
+    
+}
+/*IMAGE OF MAIN PAGE*/
+.image-capturer{
+    padding-top: 72px;
+}
+.image-capturer img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.img-container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.triangle{
+    width: 50%;
+    min-height: 350px;
+    margin-left: -100px;
+    margin-top: 40px;
+    background-color:#B08EAD ;
+    border-radius: 15px;
+    padding: 0 4% 0 4%;
+   
+
+}
+.new{
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: -30px;
+
+}
+.context{
+    font-size: 45px;
+    font-family:Cormorant Garamond ;
+    color: white;
+}
+.buy-btn{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+    
+}
+.buy-btn::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    transition: 0.3s;
+
+}
+.buy-btn:hover::after{
+    width: 100%;
+   
+}
+@media(max-width:768px){
+    
+    .img-container{
+        flex-direction: column;
+    }
+    .triangle{
+        width: 80%;
+        margin: 0;
+        margin-top: -100px;
+    }
+    .context{
+        font-size: 35px;
+    }
+    .nav-bar {
+        display: none;
+    }
+    #face{
+        height: 850px;
+    }
+}
+@media(max-width:1700px){
+    
+}
+
+
+
+article {
+    margin-top: 75px;
+}
+.designer, .context2, .learn-more-btn{
+    text-align: center;
+}
+.designer{
+    font-size: 14px;
+    font-family: Roboto;
+    color: #B99BB6 ;
+}
+.context2{
+    font-size: 26px;
+    color: #5F4D5D;
+}
+.learn-more-btn button{
+    width: 140px;
+    height: 45px;
+    border:1px solid #B99BB6;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #B99BB6;
+}
+.learn-more-btn button:hover{
+    background-color: var(--link_clor);
+    color: white;
+}
+/*Card starts from here*/
+.cards{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+}
+.card{
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background-color: #CEB3CB;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container img{
+  width: 360px;
+  height: 300px;
+
+}
+.details h4{
+   font-size: 25px;
+   font-family: Cormorant Garamond;
+   padding-left: 25px;
+   color: white;
+}
+.details p{
+    font-family: Cormorant Garamond;
+   padding-left: 25px;
+   color: white;
+   font-size: 17px;
+}
+
+/*Card Shadows*/
+
+.card:hover{
+    box-shadow: 0 8px 8px 12px rgba(43, 44, 44, 0.534);
+    transform: scale(1.1);
+}
+
+
+
