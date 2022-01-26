@@ -5,6 +5,9 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Cormorant Garamond;
+    
+}
+.main{
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -150,7 +153,7 @@ header{
     .self-box{
         display: block;
         margin: 0 auto!important;
-        width: 340px !important;
+        width: 300px !important;
         margin-left: -40px !important;
         margin-top: -100px !important;
         height: 350px;
