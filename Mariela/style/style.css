@@ -11,6 +11,7 @@ body{
 .main{
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 :root{
     --link_clor:#B08EAD;
@@ -233,6 +234,9 @@ header{
     }
     .services{
         height: 80vh !important;
+    }
+    .bottom-nav{
+        padding-left: 30px !important;
     }
 
 
@@ -588,5 +592,21 @@ textarea{
     text-align: center;
     font-size: 24px;
     font-family: Roboto;
+}
+
+/*bottom navigation bar*/
+.bottom-nav{
+    background-color: #C9ADC6;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 100px;
+}
+.bottom-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    padding-left: 35px;
 }
 
