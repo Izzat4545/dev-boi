@@ -222,6 +222,15 @@ header{
         font-size: 20px !important;
         color: #5F4D5D;
     }
+    .s-input {
+        padding-left: 25%;
+    }
+    .s-input input{
+        margin-bottom: 10px;
+    }
+    .subscribtion{
+        height: 40vh !important;
+    }
 
 
 }
@@ -514,9 +523,50 @@ textarea{
     color: white;
     cursor: pointer;
     transition: .3s;
+    font-size: 18px;
 }
 .submit-btn button:hover{
     background-color: white;
     color: #CEB3CB;
+}
+/*Subscribtion section*/
+.subscribtion{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.s-theme{
+    font-family: Roboto;
+    font-size: 14px;
+    color:#B99BB6
+}
+.s-content{
+    font-size: 24px;
+    color: #5F4D5D;
+    font-family: Cormorant Garamond;
+}
+.s-input input{
+    height: 60px;
+    width: 200px;
+    background-color: white;
+    color: #CEB3CB;
+    padding-left: 15px;
+    font-style: italic;
+    border-radius: 0;
+    border: 1px solid#CEB3CB;
+    font-size: 18px;
+}
+.s-input button{
+    height: 60px;
+    width: 200px;
+    border-radius: 0;
+    background-color: #CEB3CB;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
 }
 
