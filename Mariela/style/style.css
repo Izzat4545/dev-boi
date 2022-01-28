@@ -231,6 +231,9 @@ header{
     .subscribtion{
         height: 40vh !important;
     }
+    .services{
+        height: 80vh !important;
+    }
 
 
 }
@@ -568,5 +571,22 @@ textarea{
     font-size: 18px;
     border: none;
     cursor: pointer;
+}
+/*Service section*/
+.services{
+    background-color: #D6BBD3;
+    height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.s-holder{
+    width: 260px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Roboto;
 }
 
