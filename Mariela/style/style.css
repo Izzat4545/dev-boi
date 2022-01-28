@@ -81,6 +81,9 @@ header{
    
 
 }
+.resizer{
+    width: 40%;
+}
 .new{
     font-size: 14px;
     font-family: Roboto;
@@ -127,6 +130,9 @@ header{
         width: 80%;
         margin: 0;
         margin-top: -100px;
+    }
+    .resizer{
+        width: 70%;
     }
     .context{
         font-size: 35px;
