@@ -222,8 +222,22 @@ header{
         font-size: 20px !important;
         color: #5F4D5D;
     }
-   
 
+
+}
+@media(max-width:1000px){
+    .forms{
+        flex-direction: column-reverse;
+        height: 1000px !important;
+        gap: 20px;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .inputs input{
+        margin-bottom: 10px;
+    }
+   
+    
 }
 @media(max-width:1350px){
     .h-card{
@@ -426,13 +440,83 @@ article {
     padding-left: 30%;
 }
 .h-card2, .h-img{
-    order: 21;
+    order: 2;
 }
 .h-captions{
-    order: 2;
+    order: 1;
 }
 hr{
     width: 70%;
     border-color: #D7B7D4;
+}
+/*Form Part*/
+.forms{
+    margin-top: 130px;
+    background-color: #CEB3CB;
+    height: 560px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+.left .l-content{
+    padding-bottom: 20px;
+}
+.l-theme{
+    font-family: Roboto;
+    font-size: 14px;
+}
+.l-content{
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+}
+.r-theme{
+    font-family: Roboto;
+    font-size: 14px;
+}
+.r-content{
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.inputs{
+    margin-bottom: 30px;
+}
+.inputs input{
+    height: 50px;
+    width: 288px;
+    border: 1px solid #FFFFFF;
+    background-color: #CEB3CB;
+    color: white;
+    font-style: italic;
+    margin-right: 24px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+textarea{
+    border-radius: 0px;
+    border: 1px solid #FFFFFF;
+    background-color: #CEB3CB;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    padding: 15px;
+}
+.submit-btn button{
+    width: 210px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    background-color: #CEB3CB;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.submit-btn button:hover{
+    background-color: white;
+    color: #CEB3CB;
 }
 
