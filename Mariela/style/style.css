@@ -237,11 +237,22 @@ header{
         height: 80vh !important;
     }
     .bottom-nav{
-        padding-left: 30px !important;
+        flex-direction: column;
+        height: 20vh !important;
+        justify-content: center;
+        padding-left: 0px !important;
     }
     .nav-bar a{
         padding-right: 0px;
         font-size: 20px;
+       
+    }
+    .b-nav-links{
+        display: flex;
+        
+    }
+    .b-nav-links a{
+        font-size: 18px !important;
     }
 
 
@@ -605,7 +616,6 @@ textarea{
     height: 10vh;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     padding-left: 100px;
 }
 .bottom-nav a{
