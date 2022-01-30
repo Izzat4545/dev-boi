@@ -156,8 +156,9 @@ header{
     .context{
         font-size: 35px;
     }
-    .nav-bar {
-        display: none;
+    header{
+        flex-direction: column;
+        height: 140px;
     }
     #face{
         height: 850px;
@@ -237,6 +238,10 @@ header{
     }
     .bottom-nav{
         padding-left: 30px !important;
+    }
+    .nav-bar a{
+        padding-right: 0px;
+        font-size: 20px;
     }
 
 
