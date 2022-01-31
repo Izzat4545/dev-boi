@@ -1,7 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Varela+Round&display=swap");
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.main .container {
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+.main .upper-element {
+  color: white;
+  background: #A5C926;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.main .upper-element .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.main .upper-element .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main .nav-bar {
+  font-family: 'Open Sans', sans-serif;
 }
 /*# sourceMappingURL=toystore.css.map */

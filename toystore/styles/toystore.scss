@@ -1,5 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Varela+Round&display=swap');
+
+$green: #A5C926;
+$yellow: #FFC12C;
+$red: #FB416B;
+
 body{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.main{
+    overflow-x: hidden;
+    .container{
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+    .upper-element{
+        color: white;
+        background: $green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 9px;
+        padding-bottom: 9px;
+       
+        .contacts{
+            display: flex;
+            gap: 16px;
+        }
+        .icons{
+            display: flex;
+            gap: 15px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }   
+    .nav-bar{
+        font-family: 'Open Sans', sans-serif;
+    }
 }
