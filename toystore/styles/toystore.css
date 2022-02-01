@@ -3,11 +3,14 @@
   .upper-element {
     visibility: hidden;
     height: 0;
+    padding: 0 !important;
   }
   .nav-bar {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
+    background-color: #A5C926 !important;
+    color: white;
   }
   .nav-bar a {
     display: none;
@@ -30,8 +33,8 @@ body {
 }
 
 .main .container {
-  padding-left: 135px;
-  padding-right: 135px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .main .upper-element {
@@ -81,17 +84,26 @@ body {
   background-color: white;
 }
 
+.main .nav-bar a {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .nav-bar a:hover {
+  color: #A5C926;
+}
+
 .main .nav-bar .hamburger {
-  width: 45px;
+  width: 35px;
   height: 40px;
   display: none;
   cursor: pointer;
 }
 
 .main .nav-bar .hamburger .line {
-  height: 5px;
+  height: 4px;
   width: 100%;
-  background-color: #A5C926;
+  background-color: white;
   display: block;
   border-radius: 5px;
   -webkit-transition: 0.3s ease;
@@ -118,5 +130,78 @@ body {
 .main .nav-bar .link-wrapper .logo {
   font-size: 21px;
   cursor: pointer;
+  font-weight: 600;
+}
+
+.main .bg-section {
+  background: url(../images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .bg-section .box {
+  width: 570px;
+  height: 300px;
+  border-radius: 16px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  gap: 20px;
+}
+
+.main .bg-section .box .b-text1 {
+  font-size: 16px;
+  color: #A5C926;
+}
+
+.main .bg-section .box .b-text2 {
+  font-size: 38px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.main .bg-section .box .b-btn button {
+  width: 153px;
+  height: 48px;
+  background-color: #A5C926;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .bg-section .box .b-btn button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .bg-section .box .b-btn button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=toystore.css.map */
