@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Varela+Round&display=swap");
+@media (max-width: 800px) {
+  .upper-element {
+    visibility: hidden;
+    height: 0;
+  }
+  .nav-bar {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .nav-bar a {
+    display: none;
+  }
+  .nav-bar .hamburger {
+    display: block !important;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -49,5 +67,56 @@ body {
 
 .main .nav-bar {
   font-family: 'Open Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.main .nav-bar .hamburger {
+  width: 45px;
+  height: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+.main .nav-bar .hamburger .line {
+  height: 5px;
+  width: 100%;
+  background-color: #A5C926;
+  display: block;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+.main .nav-bar a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+}
+
+.main .nav-bar .link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 36px;
+}
+
+.main .nav-bar .link-wrapper .logo {
+  font-size: 21px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=toystore.css.map */
