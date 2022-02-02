@@ -204,4 +204,8 @@ body {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+
+.main .card-section {
+  margin-top: 150px;
+}
 /*# sourceMappingURL=toystore.css.map */
