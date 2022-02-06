@@ -1,5 +1,11 @@
-div {
-  height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,11 +13,118 @@ div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: #465050;
+  position: fixed;
+  height: 100vh;
+  gap: 30px;
+  width: 250px;
+  left: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 50;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav a:hover {
+  background: #a39090;
+}
+
+section {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  width: 0;
+  top: 0;
+  height: 100vh;
+  -webkit-transition: all ease-in .5s;
+  transition: all ease-in .5s;
+  opacity: 0;
+}
+
+section h1 {
+  color: white;
+  font-size: 50px;
+}
+
+section:target {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+section:target h1 {
+  opacity: 0;
+  -webkit-animation: .8s fadeIn Forwards 1s;
+          animation: .8s fadeIn Forwards 1s;
+}
+
+#first {
+  background: #f0a3bc;
+}
+
+#second {
+  background: #70be51;
+}
+
+#third {
+  background: #eb6b40;
+}
+
+#fourth {
+  background: #9b45b2;
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+/*mobile view*/
+@media (max-width: 768px) {
+  nav {
+    width: 50px;
+  }
+  nav .links {
+    visibility: hidden;
+    padding-left: 12px;
+  }
+  nav span {
+    visibility: visible;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
