@@ -62,10 +62,13 @@ body{
         padding-bottom: 24px;
         align-items: center;
         background-color: white;
+
         a{
             transition: .3s;
+            margin-left: 20px;
             &:hover{
                 color: $green;
+    
             }
         }
         .hamburger{
