@@ -5,6 +5,10 @@ body {
           box-sizing: border-box;
 }
 
+.main {
+  overflow-y: hidden;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
