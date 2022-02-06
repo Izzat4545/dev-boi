@@ -2,9 +2,12 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .main{
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 nav{
     display: flex;
@@ -30,6 +33,10 @@ nav{
         transition: .3s ;
         &:hover{
             background: rgb(163, 144, 144);
+        }
+        &:target{
+            background: red;
+            width: 100%;
         }
     }
 }

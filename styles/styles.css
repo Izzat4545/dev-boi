@@ -3,10 +3,13 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .main {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 nav {
@@ -49,6 +52,11 @@ nav a {
 
 nav a:hover {
   background: #a39090;
+}
+
+nav a:target {
+  background: red;
+  width: 100%;
 }
 
 section {
