@@ -1,0 +1,261 @@
+//Version 1.1
+
+
+//Coding was done by https://t.me/dev_boi  Sultonov Izzatbek
+
+/*THIS FILE MAINLY FOCUSED ON MOBILE SCREEN*/
+@media(max-width:1000px){
+    #about{
+        .h-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            .h-image{
+                height: 360px !important;
+                
+                img{
+                    max-height: 100%;
+                    margin: 0 auto;
+                }
+            }
+            .h-card-captions{
+                width: 350px !important;
+                .h-card-theme{
+                    font-size: 25px !important;
+                }
+                .h-card-details{
+                    font-size: 16px !important;
+                    color: #545050;
+                }    
+            }
+            
+        }
+    }
+    .admission{
+        .a-theme{
+            font-size: 25px !important;
+            text-align: center;
+        }
+        hr{
+            width: 250px !important;
+        }
+        /*admission captions*/
+        .a-captions{
+            width: 350px !important;
+        }
+       
+    }
+    #foundation{
+        .cards{
+            .card{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                align-items: center;
+                justify-content: center;
+                .foundation-caption{
+                    width: 350px !important;
+                }
+                li{
+                    padding-top: 15px;
+                }
+            }
+        }
+        
+    }
+    #undergraduate{
+        .u-cards{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            gap: 50px;
+            .u-card{
+                display: flex;
+                flex-direction: column !important;
+                gap: 25px;
+                align-items: center;
+                justify-content: center; 
+                .u-captions{
+                    width: 350px !important;
+                    .apply-btn-holder{
+                        text-align: center;
+                    }
+                }
+                .u-img{
+                    height: 300px;
+                    width: 350px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }  
+            }
+            .u-card-r{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                align-items: center;
+                justify-content: center; 
+                .u-captions{
+                    width: 350px !important;
+                    .apply-btn-holder{
+                        text-align: center;
+                        
+                    }
+                } 
+                .u-img{
+                    height: 300px;
+                    width: 350px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }   
+            }
+            
+        }
+    }
+    footer{
+        .first{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .f-theme{
+                font-size: 20px;
+            }
+
+        }
+        .second{
+            background-color: #FDDA4E;
+            nav{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 35px;
+                a{
+                    text-decoration: none;
+                    color: rgb(48, 46, 46);
+                   margin-left: 5px !important;
+                }
+            }
+        }
+    }
+    
+}
+
+@media(max-width:900px){
+    .navbar{
+        position: fixed !important;
+        width: 90%;
+        z-index: 5;
+        .nav-link{
+            position: absolute;
+            right: 0;
+            height: 75vh;
+            top: 9vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            gap: 15px;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform .5s ease-in;
+            width: 50%;
+            .links{
+                width: 100%;
+                text-align: center;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                transition: .5s;
+                &:active{
+                    background-color: rgb(124, 120, 120);
+                }
+            }
+        }
+        .hamburger{
+            display: block !important;
+            div{
+                transition: .5s ease;
+            }
+
+        }
+
+    }
+    #about{
+        .h-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            .h-image{
+                height: 460px ;
+                
+                img{
+                    max-height: 100%;
+                    margin: 0 auto;
+                }
+            }
+            .h-card-captions{
+                .h-card-theme{
+                    font-size: 25px;
+                } 
+            }
+            
+        }
+    }
+    
+}
+@media(max-width:1200px){
+    #about{
+        .h-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            .h-image{
+                height: 460px;
+                
+                img{
+                    max-height: 100%;
+                    margin: 0 auto;
+                }
+            }
+            
+        }
+    }
+    
+}
+/*Hamburger animation*/
+.active{
+    .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .line2{
+        opacity: 0;
+    }
+    .line3{
+        transform: rotate(45deg) translate(-6px,-5px);
+    }
+}
+
+//About section card
+
+
+//Version 1.1
+
+
+//Coding was done by https://t.me/dev_boi  Sultonov Izzatbek
+
